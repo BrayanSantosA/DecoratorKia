@@ -1,21 +1,20 @@
 package decorator;
 import vehicles.KiaPicanto;
 
-public abstract class Bolts extends AccessoriesDecorator {
+public abstract class Rim13 extends AccessoriesDecorator {
     private KiaPicanto kiaPicanto;
 
-    public Bolts(KiaPicanto kiaPicanto) {
+    public Rim13(KiaPicanto kiaPicanto) {
         this.kiaPicanto = kiaPicanto;
     }
 
     @Override
     public String getDescription() {
-        return kiaPicanto.getDescription() + ", Pernos de seguridad";
+        return kiaPicanto.getDescription() + ", Rines de 13 pulgadas";
     }
 
     @Override
     public double Cost() {
-        return kiaPicanto.Cost() + 156100;
+        return kiaPicanto.Cost() + 350000;
     }
-    
 }
