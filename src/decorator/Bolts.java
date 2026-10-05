@@ -1,7 +1,7 @@
 package decorator;
 import vehicles.KiaPicanto;
 
-public abstract class Bolts extends AccessoriesDecorator {
+public class Bolts extends AccessoriesDecorator {
     private KiaPicanto kiaPicanto;
 
     public Bolts(KiaPicanto kiaPicanto) {
