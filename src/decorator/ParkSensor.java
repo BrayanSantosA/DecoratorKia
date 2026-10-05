@@ -1,20 +1,21 @@
 package decorator;
 import vehicles.KiaPicanto;
 
-public class TouwHitch extends AccessoriesDecorator {
+public class ParkSensor extends AccessoriesDecorator {
     private KiaPicanto kiaPicanto;
 
-    public TouwHitch(KiaPicanto kiaPicanto) {
+    public ParkSensor(KiaPicanto kiaPicanto) {
         this.kiaPicanto = kiaPicanto;
     }
 
     @Override
     public String getDescription() {
-        return kiaPicanto.getDescription() + ", Tiro de arrastre";
+        return kiaPicanto.getDescription() + ", Sensor de parqueo";
     }
 
     @Override
     public double Cost() {
-        return kiaPicanto.Cost() + 810000;
+        return kiaPicanto.Cost() + 150000;
     }
+    
 }
