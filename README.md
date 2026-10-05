@@ -6,9 +6,6 @@ Aplicación en Java que simula la compra de un Kia Picanto y la personalización
 
 El usuario elige un modelo base del Kia Picanto y le agrega los accesorios que quiera, en cualquier cantidad y orden. Cada accesorio suma su precio al total y añade su nombre a la descripción del vehículo. Al final se obtiene un solo objeto que representa el carro con todo lo que se le agregó.
 
-## ¿Por qué el patrón Decorator?
-
-Los accesorios se pueden combinar de muchas formas. Si cada combinación fuera una clase distinta (por ejemplo "Zenith AT con sensor y rines"), se necesitarían cientos de clases. El patrón Decorator evita esto: cada accesorio es una capa que envuelve al vehículo y le agrega su propio costo y descripción. Así se pueden crear combinaciones nuevas sin modificar el código existente, solo apilando accesorios.
 
 ## Cómo funciona
 
